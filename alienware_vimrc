@@ -1,0 +1,64 @@
+set number
+set relativenumber
+set ignorecase
+syntax enable
+set clipboard=unnamedplus
+set splitbelow splitright
+set noswapfile
+set hlsearch
+set incsearch
+
+let mapleader = ","
+
+" remap split navigation to just control
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
+
+" make adjusting split size more user friendly
+
+
+noremap <silent> <C-left> :vertical resize +3<CR>
+noremap <silent> <C-right> :vertical resize -3<CR>
+noremap <silent> <C-up> :resize +3<CR>
+noremap <silent> <C-down> :resize -3<CR> 
+
+imap jj <Esc>
+
+
+call plug#begin()
+
+Plug 'https://github.com/vim-airline/vim-airline' 
+Plug 'http://github.com/tpope/vim-surround' 
+Plug 'https://github.com/preservim/nerdtree' 
+Plug 'https://github.com/tpope/vim-commentary' 
+Plug 'vimwiki/vimwiki'
+Plug 'https://github.com/preservim/nerdtree' " NerdTree
+Plug 'myhere/vim-nodejs-complete'
+
+set encoding=UTF-8
+
+call plug#end()
+
+nnoremap <C-f> :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
+
+nmap <F8> :TagbarToggle<CR>
+
+set completeopt-=preview " For No Previews
+
+
+let g:NERDTreeDirArrowExpandable="+"
+let g:NERDTreeDirArrowCollapsible="~"
+
+" let c='a'
+" while c <= 'z'
+"   exec "set <A-".c.">=\e".c
+"   exec "imap \e".c." <A-".c.">"
+"   let c = nr2char(1+char2nr(c))
+" endw
+
+" set timeout ttimeoutlen=50

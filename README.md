@@ -8,3 +8,4 @@ sudo apt-get install vim-gtk
 let mapleader = " " " map leader to Space
 let mapleader = "," " map leader to comma
   
+noremap <Leader>w:w !sudo tee %

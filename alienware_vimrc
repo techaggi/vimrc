@@ -8,7 +8,7 @@ set noswapfile
 set hlsearch
 set incsearch
 
-let mapleader = ","
+let mapleader = " "
 
 " remap split navigation to just control
 noremap <C-h> <C-w>h

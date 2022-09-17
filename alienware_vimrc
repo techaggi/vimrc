@@ -10,6 +10,8 @@ set incsearch
 
 let mapleader = " "
 noremap <Leader>w :w !sudo tee %
+vnoremap <leader>c "+y
+noremap <leader>v "+gp
 
 
 " remap split navigation to just control

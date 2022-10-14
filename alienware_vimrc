@@ -9,6 +9,7 @@ set noswapfile
 set hlsearch 
 "show search results as you type
 set incsearch 
+set tabstop=4
 
 let mapleader = " "
 noremap <Leader>w :w !sudo tee %

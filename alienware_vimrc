@@ -22,6 +22,10 @@ noremap <leader>- :s/\%V /_/g
 noremap <leader>4 :%s/$/  /    
 
 
+" optisch insert mode erkennen
+ 
+autocmd InsertEnter * set cul
+autocmd InsertLeave * set nocul
 
 
 " remap split navigation to just control

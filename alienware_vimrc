@@ -21,6 +21,8 @@ noremap <leader>- :s/\%V /_/g
 "replace ende mit 2x space im ganzen file 
 noremap <leader>4 :%s/$/  /    
 
+"reload vim config
+command! reload execute "source ~/.vimrc"
 
 " optisch insert mode erkennen
  

@@ -19,7 +19,12 @@ noremap <leader>v "+gp
 "replace space mit unterstrich im selektierten bereich
 noremap <leader>- :s/\%V /_/g  
 "replace ende mit 2x space im ganzen file 
-noremap <leader>4 :%s/$/  /    
+noremap <leader>4 :%s/$/  /  
+
+"set tab and shiftkey
+set expandtab
+set tabstop=2
+set shiftwidth=4
 
 "reload vim config
 command! reload execute "source ~/.vimrc"
